@@ -36,6 +36,10 @@ stdenv.mkDerivation (finalAttrs: {
     libyang
   ];
 
+  buildInputs = [
+    libyang
+  ];
+
   cmakeFlags = [
     "-DREPO_PATH=$out/etc"
 
